@@ -15,16 +15,22 @@
 </head>
 
 <body>
-  <header class="menu-bar container">
-    <img src="./images/logo.png" alt="logo" class="logo" />
-    <nav class="nav-menu">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="/" class="nav-link">Collections</a></li>
-        <li class="nav-item"><a href="/" class="nav-link">Products</a></li>
-        <li class="nav-item"><a href="/" class="nav-link">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="sticky-menu">
+
+    <header class="menu-bar container">
+      <img src="./images/logo.png" alt="logo" class="logo" />
+      <nav class="nav-menu ">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/" class="nav-link">Collections</a></li>
+          <li class="nav-item"><a href="/" class="nav-link">Products</a></li>
+          <li class="nav-item"><a href="/" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  </div>
+
+
 
   <main>
     <!-- Hero Section -->
@@ -68,6 +74,8 @@
         <li class="product-item">
           <img src="./images/pinky-pink.jpg" alt="Photo by Malvestida Magazine on Unsplash"
             class="product-item-image" />
+          <!-- eg label 9 feb -->
+          <div class="product-label">NEW</div>
           <h3 class="product-item-title">Pinky Pink</h3>
           <p>Congue nisi vitae suscipit tellus mauris a diam maecenas sed.</p>
           <p class="price">฿2,490</p>
@@ -75,12 +83,14 @@
         <li class="product-item">
           <img src="./images/out-of-the-blue.jpg" alt="Photo by Alexander Rotker on Unsplash"
             class="product-item-image" />
+          <!-- eg label 9 feb -->
+          <div class="product-label">SALE</div>
           <h3 class="product-item-title">Out of the Blue</h3>
           <p>Non sodales neque sodales ut etiam sit amet nisl purus.</p>
           <p class="price">฿4,990</p>
         </li>
         <li class="product-item">
-          <img src="./images/atomic-charcoal.jpg" alt="Photo by Imani Bahati on Unsplash" class="product-item-image" />
+          <img src="./images/atomic-charcoal.jpg" alt="Photo by Imani Bahati on Unsplash" class="product-item-image " />
           <h3 class="product-item-title">Atomic Charcoal</h3>
           <p>
             Ridiculus mus mauris vitae ultricies leo. Libero id faucibus nisl
@@ -119,20 +129,24 @@
       <h2 class="section-title">Our Story</h2>
       <div class="about-content">
         <img src="./images/our-story.jpg" alt="Photo by Raoul Ortega on Unsplash" class="about-image" />
-        <p class="about-description">
-          Vel orci porta non pulvinar. Non sodales neque sodales ut etiam sit
-          amet nisl purus. Eget dolor morbi non arcu risus quis. Posuere urna
-          nec tincidunt praesent semper feugiat nibh sed. Scelerisque purus
-          semper eget duis. Dictumst quisque sagittis purus sit amet volutpat
-          consequat mauris nunc. Imperdiet massa tincidunt nunc pulvinar
-          sapien et ligula ullamcorper. Scelerisque in dictum non consectetur
-          a erat nam. Amet mauris commodo quis imperdiet massa. Amet venenatis
-          urna cursus eget.
-        </p>
-        <a href="/" class="button">Know Us More</a>
+        <div class="about-info">
+          <p class="about-description">
+            Vel orci porta non pulvinar. Non sodales neque sodales ut etiam sit
+            amet nisl purus. Eget dolor morbi non arcu risus quis. Posuere urna
+            nec tincidunt praesent semper feugiat nibh sed. Scelerisque purus
+            semper eget duis. Dictumst quisque sagittis purus sit amet volutpat
+            consequat mauris nunc. Imperdiet massa tincidunt nunc pulvinar
+            sapien et ligula ullamcorper. Scelerisque in dictum non consectetur
+            a erat nam. Amet mauris commodo quis imperdiet massa. Amet venenatis
+            urna cursus eget.
+          </p>
+          <a href="/" class="button">Know Us More</a>
+
+        </div>
       </div>
     </section>
   </main>
+
 </body>
 
 </html>

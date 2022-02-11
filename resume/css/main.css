@@ -1,0 +1,9 @@
+.carousel-item-overflow{
+    
+    height: 400px;
+    object-fit: cover; 
+}
+
+.fit-img{
+    bject-fit: cover; 
+}

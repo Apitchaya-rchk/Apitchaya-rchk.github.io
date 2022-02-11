@@ -1,0 +1,473 @@
+/* mobile vs desktop show content */
+
+/* When the screen width is less than 600 pixels  */
+@media screen and (max-width: 600px) { 
+    .mobile-view{
+        display: block;
+        width: 100%;
+    }
+    .desktop-view{
+        display: none;
+    }
+}
+
+/* When the screen width is more than 600 pixels  */
+@media screen and (min-width: 600px) { 
+    .mobile-view{
+        display: none;
+    }
+    .desktop-view{
+        display: block;
+        width: 100%;
+    }
+}
+
+/***************************************************************************/
+
+/* Section 1 NAV BAR */
+
+.nav-bar-scetion{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 24px;
+    height: 64px;
+}
+
+.all-desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;   
+}
+.header-name-n-logo{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.desktop-nav{
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav
+{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.item-link{
+    padding-left: 16px;
+}
+
+.desktop-nav .nav-item a{
+    margin: 0px;
+    text-decoration: none;
+    color: #212529;
+
+}
+
+/***************************************************************************/
+
+/* Section 2 BANNER */
+.banner-section{
+    background-color: lightgray;
+    display: flex;
+    margin: 0 auto;
+}
+
+.banner-image{
+    display: flex;
+    align-content: center;
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.banner-image-file{
+width: 100%;
+object-fit: cover;
+}
+
+.banner-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+}
+.banner-content h1{
+    margin: 32px 0px;
+}
+.banner-content p{
+    margin-bottom: 24px;
+}
+.banner-content a{
+    margin-bottom: 32px;
+    color: aliceblue;
+    background-color:dimgrey;
+    text-align: center;
+    width: 100%;
+    padding: 8px 0px;
+}
+
+/* When the screen width is less than 600 pixels  */
+@media only screen and (max-width: 600px) { 
+    .banner-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-image{
+        width: 100%;
+        margin: 0px;
+    }
+    .banner-content{
+        width: 100%;
+        padding: 0px 16px;
+    }
+
+}
+
+/***************************************************************************/
+
+/* Section 3 : INFORMATION */
+
+.info-section{
+    display: flex;
+    background-color: white;
+}
+
+.info-quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px 24px;
+    width: 60%;
+}
+
+.info-quote-image{
+width: 100%;
+object-fit: cover;
+margin-bottom: 32px;
+}
+
+.info-quote h2{
+    margin: 0px;
+}
+
+.info-quote p{
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.info-detail{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top:  16px;
+    border-left: 1px solid lightgray;
+}
+
+.info-detail-row{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+
+.info-detail-image{
+    width: 35%;
+    padding: 16px 0px 16px 16px;
+    display: flex;
+    align-content: center;
+}
+
+.info-detail-content{
+    display: flex;
+    width: 65%;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-detail-content h4{
+    margin: 0px;
+}
+
+.info-detail-content p{
+    margin: 8px 0px;
+}
+
+.color-bg-screen{
+    background-color: lightgray;
+}
+.info-image-file{
+width: 100%;
+object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .info-section
+    {
+        border-bottom: 1px solid lightgray;
+    }
+    .info-quote{
+        display: none;
+    }
+
+    .info-detail{
+        width: 100%;
+        padding: 0px;
+        margin: -16px 16px 0px 16px;
+        border-left: 0px;
+        
+    }
+
+    .info-detail-row{
+        display: flex;
+        flex-direction: column;  
+        border-bottom: 0px;
+    }
+
+    .info-detail-image{
+        width: 100%;
+        margin-top: 32px;
+        padding: 0px;
+        
+    }
+
+    .info-detail-content{
+        width: 100%;
+        padding: 32px 0px 32px 16px;
+    }
+
+    .color-bg-screen{
+        background-color: white;
+    }
+
+}
+
+
+/***************************************************************************/
+
+/* Section 4 : COURSES */
+.courses-section{
+    padding: 32px 72px;
+    background-color: lightgray;
+}
+
+.header-courses{
+    padding: 0px;
+    
+}
+
+.courses-card-detail{
+display:flex ;
+flex-direction: column;
+justify-content: center;
+}
+
+.card-row-1{
+    display:flex ;
+}
+
+.courses-card{
+display:flex ;
+flex-direction: column;
+max-height: 100%;
+width: calc(100% / 3);
+
+}
+
+.each-box{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card-content-size{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    padding: 16px 16px 24px 16px;
+
+}
+
+.card-content-size h4{
+    margin: 0px;
+    
+}
+
+.card-content-size p{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    word-wrap:break-word;
+}
+
+
+
+.courses-image-file{
+    width: 100%;
+    object-fit: cover;
+    }
+    
+.courses-card-detail .row{
+    --bs-gutter-x: 2rem;
+}
+@media only screen and (max-width: 600px) {
+    .courses-section{
+        padding: 32px 16px 24px 16px;
+        background-color: white;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .couses-mobile{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .couses-mobile a{
+        color: dimgray;
+        text-decoration:none;
+        padding: 16px;
+        margin-bottom: 8px;
+        background-color:lightgray;
+    }
+
+    .couses-mobile h3{
+        margin: 0px;
+    }
+
+}
+
+
+/***************************************************************************/
+
+/* Section 5 : THESIS */
+
+.thesis-section{
+    display: flex;
+    background-color: white;
+}
+
+.thesis-header{
+    margin: 32px 0px 0px 0px ;
+    display: flex;
+    justify-content:center;
+}
+
+.thesis-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px 24px;
+    width: 60%;
+}
+
+
+
+.thesis-video h3{
+    margin: 24px 0px 0px 0px ;
+}
+
+.thesis-video p{
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.thesis-detail{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.thesis-detail-row{
+    
+    display: flex;
+}
+
+.thesis-detail-image{
+    width: 35%;
+    padding: 16px 0px 16px 16px;
+    
+    
+}
+
+.thesis-detail-content{
+    display: flex;
+    width: 65%;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thesis-detail-content h4{
+    margin: 0px;
+}
+
+.thesis-detail-content p{
+    margin: 8px 0px;
+}
+
+.color-bg-screen{
+    background-color: lightgray;
+}
+.thesis-image-file{
+width: 100%;
+object-fit: cover;
+display: flex;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .thesis-detail, .thesis-video-caption{
+        display: none;
+    }
+    .thesis-video{
+        width: 100%;
+    }
+ 
+    .thesis-video{
+        margin: 16px 0px 24px 0px;
+    }
+    
+
+}
+
+
+/***************************************************************************/
+
+/* Section 6 : FOOTER */
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 48px 24px;
+    border-top: 1px solid lightgray;
+}
+
+.footer-section a{
+    margin: 0px;
+    text-decoration: none;
+    color: #212529;
+}
+
+.footer-section p{
+    margin: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .footer-section{
+        padding: 16px 24px;
+    }
+    
+
+}
+
+
+/***************************************************************************/
