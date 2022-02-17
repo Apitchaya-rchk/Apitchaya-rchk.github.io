@@ -44,7 +44,7 @@
       </div>
 
       <!-- nav bar -->
-      <div>
+      <div class="desktop-display">
         <div class="container section-nav">
 
           <!-- nav bar item -->
@@ -59,6 +59,20 @@
 
         </div>
       </div>
+
+      <div class="mobile-display">
+        <div class="container section-nav">
+
+          <!-- nav bar item -->
+          <img src="images/icon-add.png" alt="add icon">
+          <img src="images/icon-history.png" alt="history icon">
+          <img src="images/icon-notification.png" alt="notification icon">
+          <img src="images/icon-profile.png" alt="Profile icon">
+          <img src="images/icon-setting.png" alt="Setting icon">
+
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -67,7 +81,8 @@
     <div class="row" style="height: 900px;">
 
       <!-- Column 1 : add activity -->
-      <div class="col-3 section-list-activity">
+      <!-- <div class="desktop-display"> -->
+      <div class="col-3 desktop-display section-list-activity">
         <!-- head -->
         <div>
           <h2 class="section-list-activity-header">Add Activity</h2>
@@ -95,11 +110,11 @@
             <img src="images/activity-hike.png" alt="Hike icon">
             <p>Hike</p>
           </div>
-        </div>
 
-        <!-- indoor -->
-        <div class="activity-type">
-          <h3>Indoor</h3>
+
+          <!-- indoor -->
+
+          <h3 style="margin-top: 24px;">Indoor</h3>
           <!-- item 5 -->
           <div class="activity-item">
             <img src="images/activity-swimming.png" alt="Swim icon">
@@ -121,11 +136,10 @@
             <p>Yoga</p>
           </div>
         </div>
-
       </div>
 
       <!-- Column 2 : Input -->
-      <div class="col-9">
+      <div class="col-md-9">
 
         <!-- Select item -->
         <div class="select-item">
@@ -164,7 +178,7 @@
             </div>
 
             <!-- submit button -->
-            <div  class="select-item">
+            <div class="select-item">
 
               <a id="nextpage" href="dashboard.html" target="_blank">Submit<br>(Click to see next page)</a>
             </div>
