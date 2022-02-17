@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-image: url('bg.jpg');
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1{
+            background-color:deepskyblue;
+        }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
     <title>Document</title>
+
 </head>
 
 
 <body>
-    
-<h1 id="myName">My name is</h1>
-<button onclick="askMyName()">Ask My Name</button>
-<button onclick="helloWorld()">Hello World</button>
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 id="myName">My name is</h1>
+        <div>
+            <button class="btn btn-warning" onclick="askMyName()">Ask My Name</button>
+            <label> </label>
+            <button class="btn btn-danger" onclick="helloWorld()">Hello World</button>
+        </div>
+        <br>
+        <br>
+        <div>
+            <img src="pic1-js.jpg" alt="pic1" height="400px">
+            <img src="pic2-js.jpg" alt="pic2" height="400px">
+        </div>
 
+    </div>
 
     <script src="apinkchaya.js"></script>
 </body>
+
 </html>
-
-
