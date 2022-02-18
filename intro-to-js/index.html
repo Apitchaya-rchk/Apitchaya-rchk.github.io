@@ -17,7 +17,7 @@
     <style>
         body {
             font-family: 'Patrick Hand', cursive;
-            background-image: url('bg.jpg');
+
         }
 
         .container {
@@ -26,10 +26,9 @@
             align-items: center;
         }
 
-        h1{
-            background-color:deepskyblue;
+        h1 {
+            background-color: deepskyblue;
         }
-
     </style>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +51,14 @@
             <button class="btn btn-warning" onclick="askMyName()">Ask My Name</button>
             <label> </label>
             <button class="btn btn-danger" onclick="helloWorld()">Hello World</button>
+            <label> </label>
+            <button class="btn btn-info" onclick="calAge()">When were you born?</button>
         </div>
+        <br>
+        <br>
+        <p><strong>Name:</strong><p id="my-name"></p></p>
+        <p><strong>Province:</strong><p id="my-province"></p></p>
+        <button onclick="loadProfile()">Load Profile</button>
         <br>
         <br>
         <div>
