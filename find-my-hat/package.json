@@ -1,0 +1,22 @@
+{
+  "name": "find-my-hat",
+  "version": "1.0.0",
+  "description": "find-my-hat project",
+  "main": "find-my-hat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apitchaya-rchk/Apitchaya-rchk.github.io.git#main"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apitchaya-rchk/Apitchaya-rchk.github.io/issues"
+  },
+  "homepage": "https://github.com/Apitchaya-rchk/Apitchaya-rchk.github.io/tree/main#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

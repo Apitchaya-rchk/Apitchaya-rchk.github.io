@@ -41,18 +41,9 @@ class Field {
 
     //Create an field with fieldCharacter
     generateField() {
-        let round = 1;
+
         while (true) {
-          
-            // generate an field with fieldCharacter
-            // for (let row = 0; row < this.rowOfField; row++) {
-            //     this.field[row] = [];
-            //     for (let col = 0; col < this.columnOfField; col++) {
-            //         this.field[row][col] = fieldCharacter;
-            //     }
-            // }
-            
-       
+            // generate field and fill fieldCharacter .
             this.field = Array(this.rowOfField).fill().map((row) => {
                 row = Array(this.columnOfField)
                 for (let index = 0; index < row.length; index++) {
@@ -60,7 +51,6 @@ class Field {
                 }
                 return row;
             });
-            this.print();
 
             // generate each object for this game 
             let numberOfHole = Math.floor(this.percentageOfHole * this.totalElenent / 100);
@@ -69,10 +59,9 @@ class Field {
             this.generateEachObject(pathCharacter, 1);
 
             //check field can be solved.
-            this.print();
             if (this.validateGeneratedField()) break;
-            round++;
         }
+        this.print();
     }
 
     generateEachObject(object, amount) {
@@ -101,22 +90,27 @@ class Field {
 
     //Check field can be solved.
     validateGeneratedField() {
-        console.log('check in ')
         let x = this.x
         let y = this.y
-        let queueCheckPath = [[x, y]]
-        let checkedPath = []
-        
-        let round = 1;
+        let queue = [[x, y]]
+        let alreadyCheckedPaths = []
 
-        console.log(`queueCheckPath ${queueCheckPath}`)
-        while (queueCheckPath.length !== 0) {
-            let pathConsidered = queueCheckPath.shift();
-                console.log(`pathConsidered  = queueCheckPath.shift() ${pathConsidered}` )
-            if (checkedPath.indexOf(pathConsidered) === -1) {
-                checkedPath.push(pathConsidered);
-                x = pathConsidered[0];
-                y = pathConsidered[1];
+        while (queue.length !== 0) {
+            let currentPath = queue.shift();
+
+            const checkSameMove = (checkX, checkY) => {
+                for (let i = 0; i < alreadyCheckedPaths.length; i++) {
+                    if (alreadyCheckedPaths[i][0] === checkX && alreadyCheckedPaths[i][1] === checkY) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            if (checkSameMove(currentPath[0], currentPath[1])) {
+                alreadyCheckedPaths.push(currentPath);
+                x = currentPath[0];
+                y = currentPath[1];
 
                 let neighbors = [
                     [x + 1, y],
@@ -134,13 +128,13 @@ class Field {
                         if (this.field[yNeighbor][xNeighbor] === hat) {
                             return true;
                         } else if (this.field[yNeighbor][xNeighbor] === fieldCharacter) {
-                            if (checkedPath.indexOf([xNeighbor, yNeighbor]) === -1) {
-                                queueCheckPath.push([xNeighbor, yNeighbor])
+                            if (alreadyCheckedPaths.indexOf([xNeighbor, yNeighbor]) === -1) {
+                                queue.push([xNeighbor, yNeighbor])
                             }
                         }
                     }
                     else {
-                        checkedPath.push([xNeighbor, yNeighbor]);
+                        alreadyCheckedPaths.push([xNeighbor, yNeighbor]);
                     }
                 }
             }
