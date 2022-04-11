@@ -42,6 +42,7 @@ export default function Card(props) {
             break;
     }
 
+
     return (
         <div className='card bg-gray-400 shadow-lg flex m-9 w-auto rounded-lg flex-col pb-5'>
 
@@ -71,9 +72,8 @@ export default function Card(props) {
                 </div>
 
                 {/* journal */}
-                <div className='bg-white p-4 ' >
-                    <p>{props.data.description}</p>
-                </div>
+                <div className='bg-white p-4 ' id='description-detail' dangerouslySetInnerHTML={{ __html: props.data.description }} />
+    
             </div>
 
 
