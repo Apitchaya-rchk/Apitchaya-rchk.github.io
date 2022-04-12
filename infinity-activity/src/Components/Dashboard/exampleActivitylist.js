@@ -6,8 +6,9 @@ const exampleActivitylist = [
         location: 'Chinatown Yaowarach',
         date: '13/02/2022',
         duration: '1hr 30 mins',
-        description: 'a long and big street. I find chinese restaurant, cheap and delicious. a lot of souvenir shop and mixed up with fruit stall, clothes, etc. 👗👘🍑🍎🍒🍏🍋'
-    },
+        description:'<p><strong>123</strong> a long and big street. I find chinese restaurant, cheap and delicious. a lot of souvenir shop and mixed up with fruit stall, clothes, etc. 👗👘🍑🍎🍒🍏🍋</p>'
+    }
+    ,
     {
         id: 2,
         title: "Day 10 of running training for the marathon.",

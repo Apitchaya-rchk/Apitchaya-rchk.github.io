@@ -10,7 +10,7 @@ export default function Dashboard() {
 
     return (
         <div className='dashboard flex justify-center'>
-            <div className='md:flex  md:w-5/6 it '>
+            <div className='md:flex  md:w-5/6 lg:w-4/6 it '>
                 {/* profile user */}
                 <div className='flex md:flex-col md:w-1/3 justify-center md:justify-start'>
                     {/* name and pic */}
